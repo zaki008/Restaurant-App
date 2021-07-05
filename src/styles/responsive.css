@@ -1,0 +1,187 @@
+@media screen and (min-width: 1500px) {
+  main {
+    max-width: 1300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #explore .content-explore {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header h1 {
+    padding: 10px 10%;
+  }
+  .hero-content h1 {
+    font-size: 42px;
+  }
+  .hero-content p {
+    font-size: 20px;
+  }
+
+  nav ul {
+    gap: 60px;
+  }
+  #favorite .content-favorite {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .review .card-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    column-gap: 30px;
+  }
+  footer .content-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  nav {
+    display: flex;
+    top: 70px;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    /* menyembunyikan #drawer -250px (sesuai dengan ukuran lebar drawer) ke kiri */
+    transform: translate(-470px, 0);
+    transition: transform 0.3s ease-in-out;
+    background-color: #ffff;
+  }
+
+  nav.open {
+    transform: translate(0, 0);
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    position: relative;
+  }
+
+  nav ul li {
+    position: relative;
+    top: -50px;
+    margin-top: 60px;
+    font-size: 20px;
+  }
+
+  #hamburger {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .content-explore {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+  .content-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-height: 650px) {
+  nav {
+    height: 70%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .content-favorite {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+  .review .card-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #detail .card-content img {
+    width: 320px !important;
+  }
+  #detail .content-detail .card-title {
+    font-size: 28px !important;
+  }
+  #detail th {
+    font-size: 16px !important;
+  }
+  #detail td {
+    font-size: 14px !important;
+  }
+  #detail .content-detail {
+    padding: 30px 10px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    margin-top: -90px;
+    margin-bottom: -70px;
+    background: url('../public/images/hero-small.jpg') no-repeat center !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #detail .card-content img {
+    width: 200px !important;
+  }
+  #detail th {
+    font-size: 14px !important;
+  }
+  #detail td {
+    font-size: 12px !important;
+  }
+  #detail .content-detail {
+    padding: 30px 0 !important;
+  }
+  .like {
+    bottom: 70px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header h1 {
+    font-size: 26px;
+    padding: 10px 5px;
+  }
+  #detail .card-content img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #hamburger {
+    padding: 10px 10px;
+    font-size: 28px;
+    align-items: center;
+  }
+  nav {
+    top: 60px;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  nav {
+    height: 60%;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  nav {
+    height: 70%;
+  }
+  nav ul li {
+    margin-top: 50px;
+  }
+}
